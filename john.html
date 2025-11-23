@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="intro">
+                <h1>Hi, I am</h1>
+                <h2><span class="main-color">Full Stack Developer</span></h2>
+                <p>Building modern web applications with MERN stack.</p>
+            </div>
+            <div class="profile-pic">
+                <!-- You can use any profile image or illustration here -->
+                <img src="profile-pic.png" alt="Profile Picture">
+            </div>
+        </header>
+        <section id="about">
+            <h3>About Me</h3>
+            <p>Hello! My name is John Doe, and I am currently learning web development. This is my first portfolio website where I showcase my passion for creating interactive and responsive web pages. I am a student at KR Mangalam University, pursuing a B.Tech degree, and I am deeply interested in technology and coding. I love exploring new skills every day, and I always aim to improve my knowledge in the field of web development. With a hardworking and consistent mindset, I am determined to grow as a developer and build creative projects that make a real impact.</p>
+        </section>
+        <section id="skills">
+            <h3>My Skills</h3>
+            <div class="skills-row">
+                <div class="skill-card">
+                    <div class="skill-title">HTML</div>
+                    <div class="skill-level">Beginner</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-title">CSS</div>
+                    <div class="skill-level">Beginner</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-title">JavaScript</div>
+                    <div class="skill-level">Learning</div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h3>My Projects</h3>
+            <div class="projects-row">
+                <div class="project-card">
+                    <strong>Project 1</strong>
+                    <p>A simple HTML & CSS webpage.</p>
+                </div>
+                <div class="project-card">
+                    <strong>Project 2</strong>
+                    <p>Another awesome mini project.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <footer>
+            <div class="footer-content">
+                © 2025 John Doe. All rights reserved.
+            </div>
+            <button class="to-top" onclick="window.scrollTo(0,0);">Back to Top</button>
+        </footer>
+    </div>
+</body>
+</html>

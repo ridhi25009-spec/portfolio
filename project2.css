@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: #f9f9f9;
+    min-height: 100vh;
+    box-shadow: 0 0 4px rgba(0,0,0,0.04);
+}
+
+nav {
+    background: #1352a3;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+}
+
+nav .logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 32px 24px 32px;
+    background: #ededed;
+}
+
+header .intro {
+    max-width: 60%;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+header .main-color {
+    color: #ff8360;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #444;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background: #cee3fa;
+    border: 8px solid #f2f7fd;
+}
+
+section {
+    padding: 32px;
+}
+
+section h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.skills-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.skill-card {
+    background: #1352a3;
+    color: #fff;
+    border-radius: 6px;
+    padding: 24px 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skill-level {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.projects-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(35, 82, 163, 0.04);
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin-top: 24px;
+    gap: 8px;
+}
+
+.contact-form label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    resize: none;
+}
+
+.contact-form button {
+    background: #1352a3;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+footer {
+    background: #1352a3;
+    color: #fff;
+    padding: 18px 32px;
+    text-align: center;
+    position: relative;
+    margin-top: 32px;
+}
+
+footer .to-top {
+    position: absolute;
+    right: 32px;
+    bottom: 24px;
+    background: #fff;
+    color: #1352a3;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 16px 24px 16px;
+    }
+    header .intro {
+        max-width: 100%;
+    }
+    .profile-pic img {
+        margin-top: 24px;
+    }
+    section {
+        padding: 20px;
+    }
+    .skills-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .project-card {
+        padding: 20px;
+    }
+    .contact-form {
+        max-width: 100%;
+    }
+}
